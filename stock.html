@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  header
+{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    padding-bottom:3.5em;
+    padding-right:5em;
+    padding-top: 1em;
+    background-color: #36304a;
+    color: white;
+    width: auto
+ }
+ h1
+ {
+    font-family: main-f;
+    margin-left:2em;
+    size:25px;
+ }
+
+ p1
+ {
+    font-family: main-f;
+    margin-left:2em;
+    size:15px;
+ }
+
+.header-btn
+ {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    background: none;
+    border: white;
+    color: white;
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: main-f;
+ }
+
+ .header-btn:hover
+ {
+    color: #ECD444;
+    background: white;
+ }
+
+ @font-face 
+ {
+    font-family:'main-f';
+    src:url(assets/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 0
+  }
+h2 {
+  font-size: 25px;
+  font-family: arial;
+  font-weight: normal;
+}
+h3 {
+  font-size: 20px;
+  font-family: arial;
+  font-weight: normal;
+}
+h4 {
+  font-size: 20px;
+  font-family: arial;
+  font-weight: normal;
+}
+h5 {
+  font-size: 20px;
+  font-family: arial;
+  font-weight: normal;
+}
+h6 {
+  font-size: 20px;
+  font-family: arial;
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<!--===============================================================================================-->	
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+</head>
+<body style="padding-top: 9rem;">
+<!--Nav Bar-->
+<style>.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .nav-link.active {color: #fff;text-decoration: underline;}</style>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-4" style="background-color: #36304a;">
+        <a class="navbar-brand text-white px-4 border-right"><h1>R & R Inventory System</h1></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><h5>Order History</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendar-index.html"><h5>Receive</h5></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="stock.html"><h5>Stocks</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order_form.html"><h5>Order Form</h5></a>
+                </li>
+            </ul>
+        </div>
+        <div class="justify-content-end text-white mr-4">
+            Logged in as: <span style="color: aqua;">ADMIN</span>
+            <button class="button btn-primary ml-3">Logout</button>
+        </div>
+    </nav>
+<!--navbar-->
+<h1 style="color:#36304a; margin-top: 8rem;">Stocks</h1>
+
+<div class="row">
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h2 style=color:#36304a>Product Code</h2>
+    </center>
+ 
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h2 style=color:#36304a>Product Name</h2>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h2 style=color:#36304a>Unit</h2>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h2 style=color:#36304a>Quantity</h2>
+ 	</center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h3 style=color:#36304a>P1</h3>
+    </center>
+ 
+  </div>
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h3 style=color:#36304a>RC Cola</h3>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h3 style=color:#36304a>8oz</h3>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h3 style=color:#36304a>230</h3>
+ 	</center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h4 style=color:#36304a>P2</h4>
+    </center>
+ 
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h4 style=color:#36304a>RC Cola</h4>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h4 style=color:#36304a>24oz</h4>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h4 style=color:#36304a>40</h4>
+ 	</center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h5 style=color:#36304a>P3</h5>
+    </center>
+ 
+  </div>
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h5 style=color:#36304a>Lemon Soda</h5>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h5 style=color:#36304a>8oz</h5>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#d2fdff;">
+    <center>
+    <h5 style=color:#36304a>455</h5>
+ 	</center>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h6 style=color:#36304a>P4</h6>
+    </center>
+ 
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h6 style=color:#36304a>Lemon Soda</h6>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h6 style=color:#36304a>24oz</h6>
+    </center>
+
+  </div>
+  <div class="column" style="background-color:#b4dfe5;">
+    <center>
+    <h6 style=color:#36304a>334</h6>
+ 	</center>
+  </div>
+</div>
+
+</body>
+</html>

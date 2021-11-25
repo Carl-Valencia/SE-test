@@ -1,0 +1,46 @@
+body{
+    height: 100%;
+}
+
+.smallrem{
+    width: 6rem;
+}
+.bigrem{
+    width: 17rem;
+}
+.pr-6{
+    padding-right: 25rem;
+}
+.pr-7{
+    padding-right: 2rem;
+}
+.mr-6{
+    margin-right: 7rem;
+}
+.fieldset-proper{
+  background-color:#36304a;
+}
+
+.addProduct{
+    background-color:#36304a;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+table.table-bordered > tbody > tr > td{
+    border:1px solid black;
+}
+
+table.table-bordered{
+    border:0px solid white;
+}
+
+.tdh{
+    height: 2.5rem;
+}
+.table-color > tbody > tr> td {
+  background-color: #dfdede;
+}
+
+

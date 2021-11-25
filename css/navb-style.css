@@ -1,0 +1,54 @@
+header
+{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    padding-bottom:3.5em;
+    padding-right:5em;
+    padding-top: 1em;
+    background-color: #36304a;
+    color: white;
+    width: auto
+ }
+ h1
+ {
+    font-family: main-f;
+    margin-left:2em;
+    size:25px;
+ }
+
+ p1
+ {
+    font-family: main-f;
+    margin-left:2em;
+    size:15px;
+ }
+
+.header-btn
+ {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    background: none;
+    border: white;
+    color: white;
+    display: inline-block;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: main-f;
+ }
+
+ .header-btn:hover
+ {
+    color: #ECD444;
+    background: white;
+ }
+
+ @font-face 
+ {
+    font-family:'main-f';
+    src:url(assets/Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 0
+  }

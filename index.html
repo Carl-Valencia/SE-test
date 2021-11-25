@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Order History</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+</head>
+<body style="padding-top: 9rem;">
+	<!--Nav Bar-->
+	<style>.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .nav-link.active {color: #fff;text-decoration: underline;}</style>
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-4" style="background-color: #36304a;">
+			<a class="navbar-brand text-white px-4 border-right"><h1>R & R Inventory System</h1></a>
+			<button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="my-nav" class="collapse navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html"><h5>Order History</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="calendar-index.html"><h5>Receive</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="stock.html"><h5>Stocks</h5></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="order_form.html"><h5>Order Form</h5></a>
+					</li>
+				</ul>
+			</div>
+			<div class="justify-content-end text-white mr-4">
+				Logged in as: <span style="color: aqua;">ADMIN</span>
+				<button class="button btn-primary ml-3">Logout</button>
+			</div>
+		</nav>
+	<h1>ORDER HISTORY</h1>
+
+    <form action="date">
+        <label for="date">DATE:</label> <input type="date" id="date" name="date">
+        <label for="date">CUSTOMER NAME:</label>
+        <input type="customerName">
+      </form>
+      <br>
+      <form action="orderID">
+        <label for="orderID">ORDER ID:</label>
+        <input type="orderID" id="id" name="orderID">
+      </form>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1 m-b-110">
+					<table data-vertable="ver1">
+						<thead>
+							<tr class="row100 head">
+								<th class="column100 column1" data-column="column1">RECEIPT NO #09654-12</th>
+								<th class="column100 column2" data-column="column2">Product Name</th>
+								<th class="column100 column3" data-column="column3">Unit</th>
+								<th class="column100 column4" data-column="column4">Quantity</th>
+								<th class="column100 column5" data-column="column5">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="table100 ver2 m-b-110">
+					<table data-vertable="ver2">
+						<thead>
+							<tr class="row100 head">
+								<th class="column100 column1" data-column="column1">Product Code</th>
+								<th class="column100 column2" data-column="column2">Product Name</th>
+								<th class="column100 column3" data-column="column3">Unit</th>
+								<th class="column100 column4" data-column="column4">Quantity</th>
+								<th class="column100 column5" data-column="column5">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="table100 ver3 m-b-110">
+					<table data-vertable="ver3">
+						<thead>
+							<tr class="row100 head">
+								<th class="column100 column1" data-column="column1">Product Code</th>
+								<th class="column100 column2" data-column="column2">Product Name</th>
+								<th class="column100 column3" data-column="column3">Unit</th>
+								<th class="column100 column4" data-column="column4">Quantity</th>
+								<th class="column100 column5" data-column="column5">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+
+							<tr class="row100">
+								<td class="column100 column1" data-column="column1"></td>
+								<td class="column100 column2" data-column="column2"></td>
+								<td class="column100 column3" data-column="column3"></td>
+								<td class="column100 column4" data-column="column4"></td>
+								<td class="column100 column5" data-column="column5"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+		
+
+
+	
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
