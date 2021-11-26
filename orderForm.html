@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link href="css/orderForm.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/head icon.png">
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+    <!-- jQuery and plugins --> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.3.1.js"></script>
+    <script src="js/add.js"></script>
+</head>
+<body style="padding-top: 9rem;">
+<!--Nav Bar-->
+<style>.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .nav-link.active {color: #fff;text-decoration: underline;}</style>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-4" style="background-color: #36304a;">
+        <a class="navbar-brand text-white px-4 border-right"><h1>R & R Inventory System</h1></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="orderForm.html"><h5>Order Form</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orderHistory.html"><h5>Order History</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calendarIndex.html"><h5>Receive</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stock.html"><h5>Stocks</h5></a>
+                </li>
+            </ul>
+        </div>
+        <div class="justify-content-end text-white mr-4">
+            Logged in as: <span style="color: aqua;">ADMIN</span>
+            <button class="button btn-primary ml-3">Logout</button>
+        </div>
+    </nav>
+<!--Order Form starts-->
+<form action="/send-form" method="POST">
+    <div class="row justify-content-between ml-4"> 
+        <div class="col-9">
+            <h3>ORDER FORM</h3> 
+        </div>
+        <div class="col-3 mt-1">
+            <label for="OID">Order ID:</label>
+            <input type="text" id="OID" name="orderID" style="width: 9rem">
+        </div>
+    </div>
+    <div class="row justify-content-between my-4 ml-4">
+        <div class="col-9">
+            <label for="Oby">Ordered by:</label>
+            <input type="text" id="Oby" name="orderedBy">
+        </div>
+        <div class="col-3">
+            <label for="OrderDate">Date:</label>
+            <input type="date" id="OrderDate" name="ODate">
+        </div>
+    </div>
+<fieldset class="fieldset-proper py-3" id="field">
+    <div class="row justify-content-start ml-4 pr-6">
+        <div class="col-2">
+            <h4 style="font-weight:bold;"class="text-light">Code</h4>
+        </div>
+        <div class="col-4">
+            <h4 style="font-weight:bold;"class="text-light">Product Name</h4>
+        </div>
+        <div class="col-2">
+            <h4 style="font-weight:bold;"class="text-light">Unit</h4>
+        </div>
+        <div class="col-2">
+            <h4 style="font-weight:bold;"class="text-light">Quantity</h4>
+        </div>
+        <div class="col-2">
+            <h4 style="font-weight:bold;"class="text-light">Price</h4>
+        </div>
+    </div>
+
+    <div class="row justify-content-start ml-4 pr-6">
+        <div class="col-2">
+            <input type="text" class="smallrem" name="code"> 
+        </div>
+        <div class="col-4">
+            <input type="text" class="bigrem" name="product">
+        </div>
+        <div class="col-2">
+            <input type="text" class="smallrem" name="unit">
+        </div>
+        <div class="col-2">
+            <input type="number" class="smallrem" name="quantity">
+        </div>
+        <div class="col-2">
+            <input type="text" class="smallrem" name="price">
+        </div>
+    </div>
+
+    
+
+
+</fieldset>
+<div class="addProduct pb-4">
+    <a href="#" id="addproduct" onclick="addFields()" class="ml-4" style="color: #3DD6D0; font-size: 1.2rem"> &nbsp&nbsp + Add products</a>
+    <div class="row justify-content-end ml-4 pr-7">
+        <div class="col-2" style="margin-right: 5.1rem;">
+            <label for="total" class="text-light"><h4 style="font-style: bold;"> Total: &ensp;</h4></label>
+            <input type="number" id="total"class="smallrem" name="totalprice">
+        </div>
+        <div class="col-2">
+            <button type="button" class="btn btn-primary"style="background-color: #3DD6D0; border-color: #3DD6D0;"><a href="confirmation.html" class="text-white" >Place Order</a></button>
+        </div>
+    </div>
+</div>
+
+
+</form>
+
+</body>
